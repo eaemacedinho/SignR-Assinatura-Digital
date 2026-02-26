@@ -1,0 +1,3168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signr — Mockup Visual Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0A1628;
+    --navy-mid: #0F2040;
+    --navy-light: #1A3055;
+    --gold: #C9922A;
+    --gold-light: #E8B252;
+    --gold-pale: #F5D98A;
+    --cream: #FDFAF5;
+    --white: #FFFFFF;
+    --gray-100: #F4F6F9;
+    --gray-200: #E8ECF2;
+    --gray-400: #9AADC4;
+    --gray-600: #5A7394;
+    --gray-800: #2D4A6E;
+    --green: #1DB87A;
+    --red: #E8455A;
+    --blue-accent: #2563EB;
+    --shadow-sm: 0 2px 8px rgba(10,22,40,0.08);
+    --shadow-md: 0 8px 32px rgba(10,22,40,0.14);
+    --shadow-lg: 0 24px 64px rgba(10,22,40,0.2);
+    --shadow-gold: 0 8px 32px rgba(201,146,42,0.25);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  body {
+    background: #0D1B2E;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--white);
+    min-height: 100vh;
+  }
+
+  /* ===== INTRO ===== */
+  .intro-section {
+    text-align: center;
+    padding: 60px 40px 40px;
+    background: linear-gradient(180deg, #071220 0%, #0D1B2E 100%);
+  }
+
+  .brand-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .logo-mark {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--navy);
+    box-shadow: var(--shadow-gold);
+  }
+
+  .logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: -0.5px;
+  }
+
+  .logo-name span { color: var(--gold-light); }
+
+  .intro-tag {
+    display: inline-block;
+    background: rgba(201,146,42,0.15);
+    border: 1px solid rgba(201,146,42,0.3);
+    color: var(--gold-light);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  .intro-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .intro-title em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .intro-sub {
+    font-size: 16px;
+    color: var(--gray-400);
+    font-weight: 300;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* ===== SCREENS WRAPPER ===== */
+  .screens-wrapper {
+    padding: 40px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .screen-block {
+    position: relative;
+  }
+
+  .screen-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .screen-number {
+    width: 28px;
+    height: 28px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    flex-shrink: 0;
+  }
+
+  .screen-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+  }
+
+  .screen-desc {
+    font-size: 13px;
+    color: var(--gray-400);
+    margin-left: 38px;
+    margin-top: -8px;
+    margin-bottom: 16px;
+  }
+
+  /* ===== SCREEN FRAME ===== */
+  .screen-frame {
+    background: var(--cream);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg), 0 0 0 1px rgba(255,255,255,0.05);
+    color: var(--navy);
+  }
+
+  /* ===== TOP BAR ===== */
+  .topbar {
+    background: var(--navy);
+    padding: 0 24px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .topbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .topbar-logo-mark {
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--navy);
+  }
+
+  .topbar-logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+  }
+
+  .topbar-nav {
+    display: flex;
+    gap: 24px;
+  }
+
+  .topbar-nav a {
+    font-size: 13px;
+    color: var(--gray-400);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .2s;
+  }
+
+  .topbar-nav a.active { color: var(--white); }
+
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  /* ===== BTN ===== */
+  .btn-primary {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    color: var(--navy);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: 'DM Sans', sans-serif;
+    box-shadow: 0 2px 8px rgba(201,146,42,0.3);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--gray-400);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .btn-outline-dark {
+    background: transparent;
+    color: var(--navy);
+    border: 1.5px solid var(--navy);
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .btn-solid-navy {
+    background: var(--navy);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  /* ===== SIDEBAR ===== */
+  .layout-with-sidebar {
+    display: flex;
+    min-height: 600px;
+  }
+
+  .sidebar {
+    width: 220px;
+    background: var(--navy);
+    padding: 20px 0;
+    flex-shrink: 0;
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .sidebar-section-label {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gray-600);
+    padding: 0 20px;
+    margin: 16px 0 8px;
+  }
+
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray-400);
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all .15s;
+  }
+
+  .sidebar-item.active {
+    color: var(--white);
+    background: rgba(255,255,255,0.06);
+    border-left-color: var(--gold);
+  }
+
+  .sidebar-icon {
+    width: 18px;
+    height: 18px;
+    opacity: .7;
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  .sidebar-badge {
+    margin-left: auto;
+    background: var(--gold);
+    color: var(--navy);
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 1px 7px;
+  }
+
+  /* ===== MAIN CONTENT ===== */
+  .main-content {
+    flex: 1;
+    padding: 28px 28px;
+    background: var(--cream);
+    overflow: auto;
+  }
+
+  .page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.2;
+  }
+
+  .page-sub {
+    font-size: 13px;
+    color: var(--gray-600);
+    margin-top: 3px;
+    font-weight: 400;
+  }
+
+  /* ===== STATS CARDS ===== */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .stat-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 16px 18px;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gray-600);
+    margin-bottom: 8px;
+  }
+
+  .stat-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-delta {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .stat-delta.down { color: var(--red); }
+
+  .stat-icon {
+    float: right;
+    margin-top: -36px;
+    width: 36px;
+    height: 36px;
+    background: var(--gray-100);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  /* ===== DOCUMENTS TABLE ===== */
+  .table-card {
+    background: var(--white);
+    border-radius: 14px;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+  }
+
+  .table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--gray-200);
+  }
+
+  .table-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+  }
+
+  .table-filters {
+    display: flex;
+    gap: 8px;
+  }
+
+  .filter-pill {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1.5px solid var(--gray-200);
+    color: var(--gray-600);
+    background: transparent;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .filter-pill.active {
+    background: var(--navy);
+    color: var(--white);
+    border-color: var(--navy);
+  }
+
+  .doc-row {
+    display: grid;
+    grid-template-columns: 2.5fr 1.2fr 1fr 1fr 0.8fr;
+    align-items: center;
+    padding: 13px 20px;
+    border-bottom: 1px solid var(--gray-100);
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .doc-row:last-child { border-bottom: none; }
+
+  .doc-row-header {
+    background: var(--gray-100);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gray-600);
+    padding: 10px 20px;
+  }
+
+  .doc-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: var(--navy);
+  }
+
+  .doc-icon {
+    width: 32px;
+    height: 36px;
+    background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .doc-icon::after {
+    content: 'PDF';
+    position: absolute;
+    bottom: 2px;
+    font-size: 6px;
+    font-weight: 800;
+    color: #4F46E5;
+    letter-spacing: .3px;
+  }
+
+  .doc-meta {
+    font-size: 11px;
+    color: var(--gray-400);
+    margin-top: 2px;
+    font-weight: 400;
+  }
+
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .status-badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .badge-signed { background: rgba(29,184,122,0.12); color: #12895B; }
+  .badge-signed::before { background: var(--green); }
+  .badge-pending { background: rgba(234,179,8,0.12); color: #92680D; }
+  .badge-pending::before { background: #EAB308; }
+  .badge-waiting { background: rgba(59,130,246,0.12); color: #1D4ED8; }
+  .badge-waiting::before { background: #3B82F6; }
+  .badge-expired { background: rgba(232,69,90,0.1); color: #B91C2C; }
+  .badge-expired::before { background: var(--red); }
+  .badge-refused { background: rgba(107,114,128,0.1); color: #4B5563; }
+  .badge-refused::before { background: #9CA3AF; }
+
+  .signers-stack {
+    display: flex;
+    align-items: center;
+  }
+
+  .signer-avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: 700;
+    margin-left: -7px;
+    color: var(--white);
+  }
+
+  .signer-avatar:first-child { margin-left: 0; }
+
+  .sa1 { background: #6366F1; }
+  .sa2 { background: #EC4899; }
+  .sa3 { background: #14B8A6; }
+  .sa4 { background: #F59E0B; color: var(--navy); }
+
+  .progress-bar {
+    width: 80px;
+    height: 5px;
+    background: var(--gray-200);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  }
+
+  .progress-text {
+    font-size: 11px;
+    color: var(--gray-600);
+    margin-top: 3px;
+    font-weight: 500;
+  }
+
+  /* ===== ACTIVITY FEED ===== */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .activity-card {
+    background: var(--white);
+    border-radius: 14px;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+    padding: 18px 20px;
+  }
+
+  .activity-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+
+  .activity-item {
+    display: flex;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--gray-100);
+    align-items: flex-start;
+  }
+
+  .activity-item:last-child { border-bottom: none; }
+
+  .activity-dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .ad-green { background: rgba(29,184,122,0.15); color: var(--green); }
+  .ad-blue { background: rgba(59,130,246,0.12); color: #3B82F6; }
+  .ad-gold { background: rgba(201,146,42,0.15); color: var(--gold); }
+  .ad-red { background: rgba(232,69,90,0.1); color: var(--red); }
+
+  .activity-body { flex: 1; }
+  .activity-text { font-size: 12.5px; color: var(--gray-800); font-weight: 500; line-height: 1.4; }
+  .activity-time { font-size: 11px; color: var(--gray-400); margin-top: 2px; font-weight: 400; }
+
+  /* ===== SCREEN 2: DOCUMENT EDITOR ===== */
+  .editor-layout {
+    display: flex;
+    min-height: 640px;
+    background: var(--cream);
+  }
+
+  .editor-sidebar {
+    width: 260px;
+    background: var(--white);
+    border-right: 1px solid var(--gray-200);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .editor-sidebar-header {
+    padding: 18px 18px 12px;
+    border-bottom: 1px solid var(--gray-200);
+  }
+
+  .editor-sidebar-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  .editor-sidebar-sub {
+    font-size: 11.5px;
+    color: var(--gray-600);
+  }
+
+  .steps-list {
+    padding: 14px 0;
+  }
+
+  .step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 18px;
+  }
+
+  .step-bubble {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .step-bubble.done { background: var(--green); color: var(--white); }
+  .step-bubble.active { background: var(--gold); color: var(--navy); }
+  .step-bubble.todo { background: var(--gray-200); color: var(--gray-600); }
+
+  .step-label { font-size: 12.5px; font-weight: 600; color: var(--navy); }
+  .step-sub { font-size: 11px; color: var(--gray-400); margin-top: 1px; }
+  .step-item.active .step-label { color: var(--gold); }
+  .step-item.todo .step-label { color: var(--gray-400); font-weight: 400; }
+
+  .step-connector {
+    width: 2px;
+    height: 18px;
+    background: var(--gray-200);
+    margin: 0 0 0 27px;
+  }
+
+  .step-connector.done { background: var(--green); }
+
+  .editor-main {
+    flex: 1;
+    padding: 20px 24px;
+    background: var(--gray-100);
+    display: flex;
+    gap: 20px;
+  }
+
+  .pdf-viewer {
+    flex: 1;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    border: 1px solid var(--gray-200);
+    position: relative;
+  }
+
+  .pdf-viewer-header {
+    background: var(--navy);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pdf-viewer-title {
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+  }
+
+  .pdf-viewer-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .pdf-page-nav {
+    font-size: 11px;
+    color: var(--gray-400);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .pdf-body {
+    padding: 24px;
+    position: relative;
+    background: #F0EFE9;
+  }
+
+  .pdf-document {
+    background: var(--white);
+    border-radius: 4px;
+    padding: 32px 36px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    min-height: 480px;
+    position: relative;
+  }
+
+  .pdf-document-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .pdf-document-sub {
+    font-size: 11px;
+    color: var(--gray-600);
+    margin-bottom: 16px;
+    border-bottom: 1.5px solid var(--navy);
+    padding-bottom: 12px;
+  }
+
+  .pdf-text-block {
+    font-size: 11px;
+    color: var(--gray-800);
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+
+  .signature-field-placeholder {
+    border: 2px dashed var(--gold);
+    border-radius: 8px;
+    background: rgba(201,146,42,0.06);
+    padding: 12px 14px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: grab;
+    position: relative;
+  }
+
+  .sig-field-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--gold);
+  }
+
+  .sig-field-sub {
+    font-size: 10px;
+    color: var(--gray-600);
+    margin-top: 2px;
+  }
+
+  .sig-field-icon {
+    font-size: 18px;
+    opacity: .6;
+  }
+
+  .sig-field-drag-hint {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 9px;
+    color: var(--gray-400);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+
+  .name-field-placeholder {
+    border: 1.5px dashed #3B82F6;
+    border-radius: 6px;
+    background: rgba(59,130,246,0.05);
+    padding: 8px 12px;
+    margin: 6px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: #3B82F6;
+    font-weight: 600;
+  }
+
+  .cpf-field-placeholder {
+    border: 1.5px dashed #8B5CF6;
+    border-radius: 6px;
+    background: rgba(139,92,246,0.05);
+    padding: 8px 12px;
+    margin: 6px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: #8B5CF6;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  .fields-panel {
+    width: 220px;
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+  }
+
+  .fields-panel-header {
+    padding: 14px 16px;
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  .fields-panel-title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .fields-panel-sub {
+    font-size: 10px;
+    color: var(--gray-400);
+    margin-top: 3px;
+  }
+
+  .field-group {
+    padding: 12px;
+    border-bottom: 1px solid var(--gray-100);
+  }
+
+  .field-group-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gray-400);
+    margin-bottom: 8px;
+  }
+
+  .field-chip {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 10px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: 8px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gray-800);
+    cursor: grab;
+    background: var(--white);
+    transition: border-color .15s;
+  }
+
+  .field-chip.sig { border-color: rgba(201,146,42,0.4); color: var(--gold); }
+  .field-chip.name { border-color: rgba(59,130,246,0.4); color: #3B82F6; }
+  .field-chip.cpf { border-color: rgba(139,92,246,0.4); color: #8B5CF6; }
+  .field-chip.date { border-color: rgba(20,184,166,0.4); color: #14B8A6; }
+  .field-chip.check { border-color: rgba(29,184,122,0.4); color: var(--green); }
+
+  /* ===== SCREEN 3: SIGN EXPERIENCE (MOBILE) ===== */
+  .mobile-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 24px;
+    background: var(--cream);
+    min-height: 680px;
+    align-items: flex-start;
+  }
+
+  .mobile-frame {
+    width: 320px;
+    background: #1A1A2E;
+    border-radius: 36px;
+    padding: 10px;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+  }
+
+  .mobile-notch {
+    width: 100px;
+    height: 24px;
+    background: #1A1A2E;
+    border-radius: 0 0 16px 16px;
+    margin: 0 auto 0;
+    position: relative;
+    z-index: 10;
+  }
+
+  .mobile-screen {
+    background: var(--cream);
+    border-radius: 28px;
+    overflow: hidden;
+    min-height: 580px;
+  }
+
+  .mobile-sign-header {
+    background: var(--navy);
+    padding: 14px 18px;
+    text-align: center;
+  }
+
+  .mobile-sign-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-logo-mark {
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: var(--navy);
+  }
+
+  .mobile-logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+  }
+
+  .mobile-sign-company {
+    font-size: 11px;
+    color: var(--gray-400);
+    font-weight: 400;
+  }
+
+  .mobile-sign-docname {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    margin-top: 3px;
+  }
+
+  .mobile-body {
+    padding: 16px 16px;
+  }
+
+  .mobile-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 12px;
+  }
+
+  .mobile-info-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 13px 14px;
+    margin-bottom: 12px;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .mobile-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  }
+
+  .mobile-info-row + .mobile-info-row {
+    border-top: 1px solid var(--gray-100);
+  }
+
+  .mobile-info-key {
+    font-size: 11px;
+    color: var(--gray-600);
+    font-weight: 500;
+  }
+
+  .mobile-info-val {
+    font-size: 12px;
+    color: var(--navy);
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .level-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    background: rgba(59,130,246,0.1);
+    color: #3B82F6;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+
+  .mobile-auth-card {
+    background: var(--navy);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+
+  .mobile-auth-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 4px;
+  }
+
+  .mobile-auth-sub {
+    font-size: 10.5px;
+    color: var(--gray-400);
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+
+  .mobile-otp-row {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+  }
+
+  .otp-box {
+    width: 36px;
+    height: 42px;
+    background: rgba(255,255,255,0.1);
+    border: 1.5px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+  }
+
+  .otp-box.filled {
+    background: rgba(201,146,42,0.2);
+    border-color: var(--gold);
+    color: var(--gold-light);
+  }
+
+  .mobile-sig-area {
+    background: var(--white);
+    border-radius: 12px;
+    border: 2px dashed var(--gold);
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .mobile-sig-hint {
+    font-size: 11px;
+    color: var(--gray-400);
+    font-weight: 500;
+  }
+
+  .mobile-sig-svg {
+    font-size: 22px;
+    opacity: .4;
+  }
+
+  .mobile-cta {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    color: var(--navy);
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    display: block;
+    text-align: center;
+    box-shadow: var(--shadow-gold);
+  }
+
+  .mobile-secondary-cta {
+    background: transparent;
+    color: var(--red);
+    border: 1.5px solid rgba(232,69,90,0.3);
+    border-radius: 12px;
+    width: 100%;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .mobile-frame-label {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 11px;
+    color: var(--gray-400);
+    font-weight: 500;
+  }
+
+  /* ===== SCREEN 4: AUDIT ===== */
+  .audit-timeline {
+    position: relative;
+    padding-left: 28px;
+  }
+
+  .audit-timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--gold) 0%, var(--gray-200) 100%);
+  }
+
+  .audit-event {
+    position: relative;
+    margin-bottom: 18px;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 13px 14px;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .audit-dot {
+    position: absolute;
+    left: -34px;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2.5px solid var(--white);
+    box-shadow: 0 0 0 2px var(--gold);
+    background: var(--gold);
+  }
+
+  .audit-dot.green {
+    background: var(--green);
+    box-shadow: 0 0 0 2px var(--green);
+  }
+
+  .audit-dot.blue {
+    background: #3B82F6;
+    box-shadow: 0 0 0 2px #3B82F6;
+  }
+
+  .audit-dot.red {
+    background: var(--red);
+    box-shadow: 0 0 0 2px var(--red);
+  }
+
+  .audit-event-title {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  .audit-event-meta {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .audit-meta-item {
+    font-size: 10.5px;
+    color: var(--gray-600);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .audit-meta-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: .5px;
+  }
+
+  .audit-hash {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--gray-400);
+    margin-top: 6px;
+    background: var(--gray-100);
+    padding: 4px 8px;
+    border-radius: 4px;
+    word-break: break-all;
+  }
+
+  .doc-integrity-banner {
+    background: linear-gradient(135deg, rgba(29,184,122,0.1) 0%, rgba(29,184,122,0.05) 100%);
+    border: 1.5px solid rgba(29,184,122,0.3);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .integrity-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .integrity-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #12895B;
+  }
+
+  .integrity-sub {
+    font-size: 11px;
+    color: var(--gray-600);
+    margin-top: 2px;
+  }
+
+  /* ===== SCREEN 5: PLANS ===== */
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 28px;
+    background: var(--navy);
+    min-height: 540px;
+  }
+
+  .plan-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 18px;
+    padding: 24px 20px;
+    position: relative;
+    transition: border-color .2s;
+  }
+
+  .plan-card.featured {
+    background: linear-gradient(145deg, rgba(201,146,42,0.15) 0%, rgba(232,178,82,0.08) 100%);
+    border: 1.5px solid var(--gold);
+  }
+
+  .plan-featured-badge {
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    color: var(--navy);
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .plan-name {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gold-light);
+    margin-bottom: 8px;
+  }
+
+  .plan-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+
+  .plan-price-period {
+    font-size: 12px;
+    color: var(--gray-400);
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+
+  .plan-desc {
+    font-size: 12px;
+    color: var(--gray-400);
+    line-height: 1.5;
+    margin-bottom: 18px;
+    font-weight: 400;
+    min-height: 54px;
+  }
+
+  .plan-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.08);
+    margin-bottom: 16px;
+  }
+
+  .plan-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.8);
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .plan-feature-check {
+    color: var(--green);
+    font-size: 12px;
+    margin-top: 1px;
+    flex-shrink: 0;
+  }
+
+  .plan-feature-cross {
+    color: var(--gray-600);
+    font-size: 12px;
+    margin-top: 1px;
+    flex-shrink: 0;
+  }
+
+  .plan-cta {
+    margin-top: 20px;
+    width: 100%;
+    padding: 11px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    border: none;
+  }
+
+  .plan-cta-outline {
+    background: transparent;
+    color: rgba(255,255,255,0.7);
+    border: 1.5px solid rgba(255,255,255,0.15);
+  }
+
+  .plan-cta-gold {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    color: var(--navy);
+    box-shadow: var(--shadow-gold);
+  }
+
+  .plan-cta-white {
+    background: rgba(255,255,255,0.1);
+    color: var(--white);
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+
+  /* ===== SCREEN 6: CERTIFICATE ===== */
+  .cert-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+    background: #F0EFE9;
+    min-height: 640px;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .certificate {
+    background: var(--white);
+    width: 560px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray-200);
+  }
+
+  .cert-header {
+    background: var(--navy);
+    padding: 24px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cert-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cert-logo-mark {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--navy);
+  }
+
+  .cert-logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+  }
+
+  .cert-badge {
+    background: rgba(29,184,122,0.15);
+    border: 1px solid rgba(29,184,122,0.4);
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: right;
+  }
+
+  .cert-badge-label {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--green);
+  }
+
+  .cert-badge-value {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 2px;
+  }
+
+  .cert-body {
+    padding: 28px 32px;
+  }
+
+  .cert-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  .cert-subtitle {
+    font-size: 12px;
+    color: var(--gray-600);
+    margin-bottom: 20px;
+  }
+
+  .cert-status-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(29,184,122,0.08);
+    border: 1.5px solid rgba(29,184,122,0.25);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+  }
+
+  .cert-status-icon {
+    font-size: 20px;
+  }
+
+  .cert-status-text {
+    font-size: 13px;
+    font-weight: 700;
+    color: #12895B;
+  }
+
+  .cert-status-sub {
+    font-size: 11px;
+    color: var(--gray-600);
+  }
+
+  .cert-section-title {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gray-400);
+    margin: 16px 0 10px;
+  }
+
+  .cert-doc-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--gray-100);
+    font-size: 12px;
+  }
+
+  .cert-doc-key {
+    color: var(--gray-600);
+    font-weight: 500;
+  }
+
+  .cert-doc-val {
+    color: var(--navy);
+    font-weight: 600;
+    text-align: right;
+    max-width: 60%;
+    word-break: break-all;
+  }
+
+  .cert-doc-val.mono {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--gray-600);
+  }
+
+  .cert-signers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .cert-signer-card {
+    background: var(--gray-100);
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid var(--gray-200);
+  }
+
+  .cert-signer-name {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  .cert-signer-role {
+    font-size: 10px;
+    color: var(--gray-600);
+    margin-top: 1px;
+  }
+
+  .cert-signer-status {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--green);
+  }
+
+  .cert-signer-time {
+    font-size: 10px;
+    color: var(--gray-400);
+    margin-top: 2px;
+  }
+
+  .cert-hash-block {
+    background: var(--navy);
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 16px;
+  }
+
+  .cert-hash-title {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gold-light);
+    margin-bottom: 8px;
+  }
+
+  .cert-hash-row {
+    margin-bottom: 6px;
+  }
+
+  .cert-hash-key {
+    font-size: 9px;
+    color: var(--gray-400);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 600;
+  }
+
+  .cert-hash-val {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: rgba(255,255,255,0.7);
+    word-break: break-all;
+    margin-top: 2px;
+  }
+
+  .cert-footer {
+    border-top: 1px solid var(--gray-200);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cert-validate-link {
+    font-size: 11px;
+    color: var(--blue-accent);
+    font-weight: 600;
+  }
+
+  .cert-timestamp {
+    font-size: 10px;
+    color: var(--gray-400);
+    font-family: 'DM Mono', monospace;
+  }
+
+  .cert-side-panel {
+    width: 220px;
+  }
+
+  .cert-qr {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 14px;
+    text-align: center;
+  }
+
+  .qr-code {
+    width: 120px;
+    height: 120px;
+    background: var(--gray-100);
+    border-radius: 8px;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: var(--gray-400);
+    border: 1px solid var(--gray-200);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .qr-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1.5px;
+    width: 110px;
+    height: 110px;
+    padding: 4px;
+  }
+
+  .qr-cell {
+    background: var(--navy);
+    border-radius: 1px;
+  }
+
+  .qr-cell.white { background: transparent; }
+
+  .cert-qr-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 3px;
+  }
+
+  .cert-qr-sub {
+    font-size: 10px;
+    color: var(--gray-600);
+    line-height: 1.4;
+  }
+
+  .cert-action-btns {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 14px;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cert-action-btn {
+    width: 100%;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    justify-content: center;
+  }
+
+  .cert-action-btn.primary {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  .cert-action-btn.gold {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    color: var(--navy);
+  }
+
+  .cert-action-btn.outline {
+    background: transparent;
+    color: var(--gray-800);
+    border: 1.5px solid var(--gray-200);
+  }
+
+  /* ===== MISC ===== */
+  .inline-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+
+  .tag-navy { background: rgba(10,22,40,0.08); color: var(--navy); }
+  .tag-gold { background: rgba(201,146,42,0.12); color: var(--gold); }
+  .tag-green { background: rgba(29,184,122,0.12); color: #12895B; }
+  .tag-blue { background: rgba(59,130,246,0.1); color: #1D4ED8; }
+
+  /* Progress chart placeholder */
+  .chart-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .chart-label {
+    font-size: 11px;
+    color: var(--gray-600);
+    font-weight: 500;
+    width: 60px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .chart-bar-track {
+    flex: 1;
+    height: 10px;
+    background: var(--gray-100);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .chart-bar-fill {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(90deg, var(--navy) 0%, var(--gray-800) 100%);
+  }
+
+  .chart-bar-fill.gold {
+    background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 100%);
+  }
+
+  .chart-value {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--navy);
+    width: 32px;
+    flex-shrink: 0;
+  }
+
+  /* Onboarding */
+  .onboarding-wrapper {
+    display: flex;
+    min-height: 640px;
+    background: var(--navy);
+  }
+
+  .onboarding-left {
+    width: 380px;
+    padding: 40px 36px;
+    background: linear-gradient(145deg, #071220 0%, #0F2040 100%);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .onboarding-step-list {
+    margin-top: 32px;
+  }
+
+  .onboarding-step {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 24px;
+    align-items: flex-start;
+  }
+
+  .onboarding-step-num {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .onboarding-step-num.done {
+    background: var(--green);
+    color: var(--white);
+  }
+
+  .onboarding-step-num.active {
+    background: var(--gold);
+    color: var(--navy);
+    box-shadow: 0 0 0 4px rgba(201,146,42,0.2);
+  }
+
+  .onboarding-step-num.todo {
+    background: rgba(255,255,255,0.07);
+    color: var(--gray-400);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .onboarding-step-body {}
+  .onboarding-step-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 3px;
+  }
+
+  .onboarding-step-sub {
+    font-size: 12px;
+    color: var(--gray-400);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .onboarding-step.todo .onboarding-step-title { color: var(--gray-400); font-weight: 400; }
+
+  .onboarding-right {
+    flex: 1;
+    padding: 40px 40px;
+    background: var(--cream);
+    color: var(--navy);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .onboarding-form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .onboarding-form-sub {
+    font-size: 13px;
+    color: var(--gray-600);
+    margin-bottom: 28px;
+    line-height: 1.5;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 14px;
+  }
+
+  .form-field.full { grid-column: 1 / -1; }
+
+  .form-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    color: var(--gray-600);
+  }
+
+  .form-input {
+    border: 1.5px solid var(--gray-200);
+    border-radius: 8px;
+    padding: 10px 13px;
+    font-size: 13px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--navy);
+    background: var(--white);
+    outline: none;
+  }
+
+  .form-input.focused {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(201,146,42,0.12);
+  }
+
+  .form-input-hint {
+    font-size: 10px;
+    color: var(--gray-400);
+  }
+
+  .form-row-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .upload-zone {
+    border: 2px dashed var(--gray-200);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    background: var(--gray-100);
+    margin-bottom: 14px;
+    cursor: pointer;
+  }
+
+  .upload-zone-icon { font-size: 28px; opacity: .5; margin-bottom: 6px; }
+  .upload-zone-label { font-size: 13px; font-weight: 600; color: var(--navy); margin-bottom: 3px; }
+  .upload-zone-sub { font-size: 11px; color: var(--gray-400); }
+
+  .logo-upload-box {
+    width: 80px;
+    height: 80px;
+    border: 2px dashed var(--gold);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: .5;
+    cursor: pointer;
+    background: rgba(201,146,42,0.05);
+    flex-shrink: 0;
+  }
+
+  .color-swatches {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  .color-swatch {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+
+  .color-swatch.selected {
+    box-shadow: 0 0 0 3px rgba(201,146,42,0.5);
+    border-color: var(--gold);
+  }
+
+  .separator-line {
+    height: 1px;
+    background: var(--gray-200);
+    margin: 24px 0;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .stats-row { grid-template-columns: 1fr 1fr; }
+    .plans-grid { grid-template-columns: 1fr 1fr; }
+    .two-col { grid-template-columns: 1fr; }
+    .mobile-wrapper { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- INTRO -->
+<div class="intro-section">
+  <div class="brand-logo">
+    <div class="logo-mark">S</div>
+    <div class="logo-name">Sign<span>r</span></div>
+  </div>
+  <div class="intro-tag">Mockup Visual — 6 Telas</div>
+  <h1 class="intro-title">Assinatura eletrônica com<br><em>a elegância que seu negócio merece</em></h1>
+  <p class="intro-sub">Plataforma SaaS multi-tenant de assinatura com validade jurídica, trilha de auditoria robusta e UX premium para o mercado brasileiro.</p>
+</div>
+
+<div class="screens-wrapper">
+
+  <!-- ====== SCREEN 1: DASHBOARD ====== -->
+  <div class="screen-block">
+    <div class="screen-label">
+      <div class="screen-number">1</div>
+      <div class="screen-name">Dashboard Principal</div>
+    </div>
+    <p class="screen-desc">Visão geral do workspace — métricas, documentos recentes e atividade em tempo real.</p>
+    <div class="screen-frame">
+      <!-- TOP BAR -->
+      <div class="topbar">
+        <div class="topbar-logo">
+          <div class="topbar-logo-mark">S</div>
+          <span class="topbar-logo-name">Signr</span>
+        </div>
+        <div class="topbar-nav">
+          <a href="#" class="active">Dashboard</a>
+          <a href="#">Documentos</a>
+          <a href="#">Templates</a>
+          <a href="#">Relatórios</a>
+        </div>
+        <div class="topbar-right">
+          <button class="btn-primary">+ Novo Documento</button>
+          <div class="avatar">JR</div>
+        </div>
+      </div>
+      <!-- BODY -->
+      <div class="layout-with-sidebar">
+        <div class="sidebar">
+          <div class="sidebar-section-label">Menu</div>
+          <div class="sidebar-item active">
+            <span class="sidebar-icon">⬡</span> Dashboard
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-icon">📄</span> Documentos
+            <span class="sidebar-badge">12</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-icon">📋</span> Templates
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-icon">👥</span> Signatários
+          </div>
+          <div class="sidebar-section-label">Configurações</div>
+          <div class="sidebar-item">
+            <span class="sidebar-icon">🏢</span> Empresa
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-icon">👤</span> Usuários
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-icon">🔗</span> API & Webhooks
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-icon">💳</span> Plano & Cobrança
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="page-header">
+            <div>
+              <div class="page-title">Bom dia, João ✦</div>
+              <div class="page-sub">Agência Creativa Ltda · Plano Business</div>
+            </div>
+            <button class="btn-primary">+ Novo Documento</button>
+          </div>
+          <!-- STATS -->
+          <div class="stats-row">
+            <div class="stat-card">
+              <div class="stat-label">Aguardando</div>
+              <div class="stat-icon">⏳</div>
+              <div class="stat-value">24</div>
+              <div class="stat-delta">↑ +3 hoje</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Assinados</div>
+              <div class="stat-icon">✅</div>
+              <div class="stat-value">187</div>
+              <div class="stat-delta">↑ +12 semana</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Expirados</div>
+              <div class="stat-icon">⚠️</div>
+              <div class="stat-value">5</div>
+              <div class="stat-delta down">↑ atenção</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Taxa de Conversão</div>
+              <div class="stat-icon">📈</div>
+              <div class="stat-value">91%</div>
+              <div class="stat-delta">↑ +4% mês</div>
+            </div>
+          </div>
+
+          <!-- TABLE -->
+          <div class="table-card">
+            <div class="table-header">
+              <div class="table-title">Documentos Recentes</div>
+              <div class="table-filters">
+                <button class="filter-pill active">Todos</button>
+                <button class="filter-pill">Pendentes</button>
+                <button class="filter-pill">Assinados</button>
+                <button class="filter-pill">Expirados</button>
+              </div>
+            </div>
+            <div class="doc-row doc-row-header">
+              <span>Documento</span>
+              <span>Signatários</span>
+              <span>Status</span>
+              <span>Progresso</span>
+              <span>Data</span>
+            </div>
+            <div class="doc-row">
+              <div class="doc-name">
+                <div class="doc-icon">📑</div>
+                <div>
+                  Contrato de Prestação de Serviços<br>
+                  <span class="doc-meta">Enviado por: João R. · 2 signatários</span>
+                </div>
+              </div>
+              <div class="signers-stack">
+                <div class="signer-avatar sa1">MC</div>
+                <div class="signer-avatar sa2">RF</div>
+              </div>
+              <div><span class="status-badge badge-pending">Pendente</span></div>
+              <div>
+                <div class="progress-bar"><div class="progress-fill" style="width:50%"></div></div>
+                <div class="progress-text">1 de 2</div>
+              </div>
+              <div style="font-size:12px;color:var(--gray-600)">23/02/2026</div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-name">
+                <div class="doc-icon">📑</div>
+                <div>
+                  Proposta Comercial — Cliente X<br>
+                  <span class="doc-meta">Enviado por: Ana S. · 1 signatário</span>
+                </div>
+              </div>
+              <div class="signers-stack">
+                <div class="signer-avatar sa3">CX</div>
+              </div>
+              <div><span class="status-badge badge-signed">Assinado</span></div>
+              <div>
+                <div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div>
+                <div class="progress-text">1 de 1</div>
+              </div>
+              <div style="font-size:12px;color:var(--gray-600)">21/02/2026</div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-name">
+                <div class="doc-icon">📑</div>
+                <div>
+                  Termo de Autorização de Uso de Imagem<br>
+                  <span class="doc-meta">Enviado por: Pedro L. · 3 signatários</span>
+                </div>
+              </div>
+              <div class="signers-stack">
+                <div class="signer-avatar sa1">MP</div>
+                <div class="signer-avatar sa4">LC</div>
+                <div class="signer-avatar sa2">TF</div>
+              </div>
+              <div><span class="status-badge badge-waiting">Visualizando</span></div>
+              <div>
+                <div class="progress-bar"><div class="progress-fill" style="width:33%"></div></div>
+                <div class="progress-text">1 de 3</div>
+              </div>
+              <div style="font-size:12px;color:var(--gray-600)">20/02/2026</div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-name">
+                <div class="doc-icon">📑</div>
+                <div>
+                  NDA — Parceria Estratégica 2026<br>
+                  <span class="doc-meta">Enviado por: João R. · 2 signatários</span>
+                </div>
+              </div>
+              <div class="signers-stack">
+                <div class="signer-avatar sa3">JB</div>
+                <div class="signer-avatar sa1">AL</div>
+              </div>
+              <div><span class="status-badge badge-expired">Expirado</span></div>
+              <div>
+                <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+                <div class="progress-text">0 de 2</div>
+              </div>
+              <div style="font-size:12px;color:var(--gray-600)">10/02/2026</div>
+            </div>
+          </div>
+
+          <!-- BOTTOM ROW -->
+          <div class="two-col">
+            <div class="activity-card">
+              <div class="activity-title">Atividade Recente</div>
+              <div class="activity-item">
+                <div class="activity-dot ad-green">✓</div>
+                <div class="activity-body">
+                  <div class="activity-text"><strong>Marcos Costa</strong> assinou "Contrato de Prestação de Serviços"</div>
+                  <div class="activity-time">há 23 minutos · IP 187.23.45.x · São Paulo, SP</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-dot ad-blue">👁</div>
+                <div class="activity-body">
+                  <div class="activity-text"><strong>Thiago Freitas</strong> abriu "Termo de Autorização de Uso de Imagem"</div>
+                  <div class="activity-time">há 1h 12min · iPhone 14 · Curitiba, PR</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-dot ad-gold">✉</div>
+                <div class="activity-body">
+                  <div class="activity-text">Lembrete automático reenviado para <strong>Rafael F.</strong></div>
+                  <div class="activity-time">há 3h · sistema automático</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-dot ad-red">✗</div>
+                <div class="activity-body">
+                  <div class="activity-text"><strong>NDA Parceria 2026</strong> expirou sem assinaturas</div>
+                  <div class="activity-time">há 15 dias · reenvio sugerido</div>
+                </div>
+              </div>
+            </div>
+            <div class="activity-card">
+              <div class="activity-title">Documentos por Tipo</div>
+              <div class="chart-bar-row">
+                <span class="chart-label">Contratos</span>
+                <div class="chart-bar-track"><div class="chart-bar-fill" style="width:78%"></div></div>
+                <span class="chart-value">78</span>
+              </div>
+              <div class="chart-bar-row">
+                <span class="chart-label">Propostas</span>
+                <div class="chart-bar-track"><div class="chart-bar-fill gold" style="width:55%"></div></div>
+                <span class="chart-value">55</span>
+              </div>
+              <div class="chart-bar-row">
+                <span class="chart-label">NDAs</span>
+                <div class="chart-bar-track"><div class="chart-bar-fill" style="width:30%"></div></div>
+                <span class="chart-value">30</span>
+              </div>
+              <div class="chart-bar-row">
+                <span class="chart-label">Termos</span>
+                <div class="chart-bar-track"><div class="chart-bar-fill gold" style="width:24%"></div></div>
+                <span class="chart-value">24</span>
+              </div>
+              <div class="chart-bar-row">
+                <span class="chart-label">Outros</span>
+                <div class="chart-bar-track"><div class="chart-bar-fill" style="width:15%"></div></div>
+                <span class="chart-value">15</span>
+              </div>
+              <div class="separator-line"></div>
+              <div style="font-size:11px;color:var(--gray-600)">
+                <span style="color:var(--navy);font-weight:700">87%</span> de documentos enviados foram assinados nos últimos 30 dias.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== SCREEN 2: ONBOARDING ====== -->
+  <div class="screen-block">
+    <div class="screen-label">
+      <div class="screen-number">2</div>
+      <div class="screen-name">Onboarding da Empresa</div>
+    </div>
+    <p class="screen-desc">Configuração inicial: dados da empresa, personalização de identidade visual e assinatura padrão.</p>
+    <div class="screen-frame">
+      <div class="topbar">
+        <div class="topbar-logo">
+          <div class="topbar-logo-mark">S</div>
+          <span class="topbar-logo-name">Signr</span>
+        </div>
+        <div style="font-size:12px;color:var(--gray-400)">Configuração inicial · Passo 2 de 4</div>
+        <button class="btn-ghost" style="font-size:12px">Sair</button>
+      </div>
+      <div class="onboarding-wrapper">
+        <div class="onboarding-left">
+          <div>
+            <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:600;color:var(--white);margin-bottom:6px">Configuração inicial</div>
+            <div style="font-size:13px;color:var(--gray-400);line-height:1.6">Leva menos de 5 minutos. Configure sua empresa e comece a enviar contratos hoje.</div>
+          </div>
+          <div class="onboarding-step-list">
+            <div class="onboarding-step">
+              <div class="onboarding-step-num done">✓</div>
+              <div class="onboarding-step-body">
+                <div class="onboarding-step-title">Criação da conta</div>
+                <div class="onboarding-step-sub">E-mail, senha e verificação OTP concluídos.</div>
+              </div>
+            </div>
+            <div class="onboarding-step">
+              <div class="onboarding-step-num active">2</div>
+              <div class="onboarding-step-body">
+                <div class="onboarding-step-title">Dados da empresa</div>
+                <div class="onboarding-step-sub">CNPJ, razão social, identidade visual e preferências padrão.</div>
+              </div>
+            </div>
+            <div class="onboarding-step">
+              <div class="onboarding-step-num todo">3</div>
+              <div class="onboarding-step-body">
+                <div class="onboarding-step-title todo">Convidar equipe</div>
+                <div class="onboarding-step-sub">Adicione usuários e defina papéis.</div>
+              </div>
+            </div>
+            <div class="onboarding-step">
+              <div class="onboarding-step-num todo">4</div>
+              <div class="onboarding-step-body">
+                <div class="onboarding-step-title todo">Primeiro documento</div>
+                <div class="onboarding-step-sub">Envie seu primeiro contrato para assinatura.</div>
+              </div>
+            </div>
+          </div>
+          <div style="font-size:11px;color:var(--gray-600);margin-top:16px">
+            🔒 Seus dados são protegidos conforme a LGPD e criptografados em repouso.
+          </div>
+        </div>
+        <div class="onboarding-right">
+          <div class="onboarding-form-title">Dados da sua empresa</div>
+          <div class="onboarding-form-sub">Essas informações aparecerão nos documentos e certificados enviados pela sua conta.</div>
+          <div style="display:flex;gap:16px;align-items:flex-start;margin-bottom:18px">
+            <div class="logo-upload-box">🏢</div>
+            <div style="flex:1">
+              <div class="form-label" style="margin-bottom:5px">Logotipo da empresa</div>
+              <div style="font-size:12px;color:var(--gray-400);margin-bottom:8px;line-height:1.5">Recomendado: PNG ou SVG, fundo transparente, mín. 200×80px</div>
+              <button class="btn-outline-dark" style="font-size:12px;padding:7px 14px">Fazer upload</button>
+            </div>
+          </div>
+          <div class="form-row-grid">
+            <div class="form-field">
+              <span class="form-label">Razão Social</span>
+              <input class="form-input focused" value="Agência Creativa Ltda" readonly>
+            </div>
+            <div class="form-field">
+              <span class="form-label">CNPJ</span>
+              <input class="form-input" value="12.345.678/0001-99" readonly>
+            </div>
+          </div>
+          <div class="form-row-grid">
+            <div class="form-field">
+              <span class="form-label">Nome de exibição</span>
+              <input class="form-input" value="Agência Creativa" readonly>
+              <span class="form-input-hint">Aparece nos e-mails e documentos</span>
+            </div>
+            <div class="form-field">
+              <span class="form-label">Setor</span>
+              <input class="form-input" value="Agência de Marketing" readonly>
+            </div>
+          </div>
+          <div class="form-field">
+            <span class="form-label">Cor principal da marca</span>
+            <div class="color-swatches">
+              <div class="color-swatch selected" style="background:#0A1628"></div>
+              <div class="color-swatch" style="background:#2563EB"></div>
+              <div class="color-swatch" style="background:#C9922A"></div>
+              <div class="color-swatch" style="background:#059669"></div>
+              <div class="color-swatch" style="background:#7C3AED"></div>
+              <div class="color-swatch" style="background:#DC2626"></div>
+              <div class="color-swatch" style="background:linear-gradient(135deg,#667eea,#764ba2)" title="Custom"></div>
+            </div>
+            <span class="form-input-hint" style="margin-top:6px">Usada no cabeçalho dos e-mails e no rodapé dos documentos</span>
+          </div>
+          <div class="form-field">
+            <span class="form-label">Nível padrão de assinatura</span>
+            <div style="display:flex;gap:8px;margin-top:4px">
+              <div style="flex:1;padding:10px 12px;border:1.5px solid var(--gray-200);border-radius:8px;font-size:12px;color:var(--gray-600);cursor:pointer">
+                <div style="font-weight:700;color:var(--navy);margin-bottom:2px">Simples</div>
+                Clique + OTP · baixo risco
+              </div>
+              <div style="flex:1;padding:10px 12px;border:2px solid var(--gold);border-radius:8px;font-size:12px;color:var(--navy);cursor:pointer;background:rgba(201,146,42,0.05)">
+                <div style="font-weight:700;color:var(--gold);margin-bottom:2px">Avançada ✦</div>
+                OTP + evidências · médio risco
+              </div>
+              <div style="flex:1;padding:10px 12px;border:1.5px solid var(--gray-200);border-radius:8px;font-size:12px;color:var(--gray-600);cursor:pointer">
+                <div style="font-weight:700;color:var(--navy);margin-bottom:2px">Qualificada</div>
+                ICP-Brasil · alto risco
+              </div>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn-outline-dark">Voltar</button>
+            <button class="btn-primary" style="padding:11px 28px;font-size:14px">Continuar →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== SCREEN 3: DOCUMENT EDITOR ====== -->
+  <div class="screen-block">
+    <div class="screen-label">
+      <div class="screen-number">3</div>
+      <div class="screen-name">Editor de Documento</div>
+    </div>
+    <p class="screen-desc">Posicionamento de campos de assinatura, nome, CPF e data diretamente no PDF com drag-and-drop.</p>
+    <div class="screen-frame">
+      <div class="topbar">
+        <div class="topbar-logo">
+          <div class="topbar-logo-mark">S</div>
+          <span class="topbar-logo-name">Signr</span>
+        </div>
+        <div style="font-size:12.5px;color:rgba(255,255,255,0.6);font-weight:500">Editando: <span style="color:var(--white)">Contrato de Prestação de Serviços.pdf</span></div>
+        <div class="topbar-right">
+          <button class="btn-ghost">Pré-visualizar</button>
+          <button class="btn-primary">Avançar: Signatários →</button>
+        </div>
+      </div>
+      <div class="editor-layout">
+        <!-- SIDEBAR STEPS -->
+        <div class="editor-sidebar">
+          <div class="editor-sidebar-header">
+            <div class="editor-sidebar-title">Preparar documento</div>
+            <div class="editor-sidebar-sub">Posicione os campos onde os signatários devem preencher</div>
+          </div>
+          <div class="steps-list">
+            <div class="step-item">
+              <div class="step-bubble done">✓</div>
+              <div>
+                <div class="step-label">Upload do PDF</div>
+                <div class="step-sub">Contrato_PS.pdf · 2 páginas</div>
+              </div>
+            </div>
+            <div class="step-connector done"></div>
+            <div class="step-item active">
+              <div class="step-bubble active">2</div>
+              <div>
+                <div class="step-label">Posicionar campos</div>
+                <div class="step-sub">Arraste os campos para o documento</div>
+              </div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item todo">
+              <div class="step-bubble todo">3</div>
+              <div>
+                <div class="step-label">Adicionar signatários</div>
+                <div class="step-sub">Defina quem assina e a ordem</div>
+              </div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-item todo">
+              <div class="step-bubble todo">4</div>
+              <div>
+                <div class="step-label">Revisar e enviar</div>
+                <div class="step-sub">Confirme e dispare o envio</div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:16px;border-top:1px solid var(--gray-200);margin-top:auto">
+            <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--gray-400);margin-bottom:8px">Signatário ativo</div>
+            <div style="display:flex;align-items:center;gap:8px;padding:8px 10px;background:rgba(201,146,42,0.08);border:1.5px solid rgba(201,146,42,0.3);border-radius:8px">
+              <div class="signer-avatar sa1" style="width:28px;height:28px;font-size:11px;border:none;margin:0;flex-shrink:0;">MC</div>
+              <div>
+                <div style="font-size:12px;font-weight:600;color:var(--navy)">Marcos Costa</div>
+                <div style="font-size:10px;color:var(--gray-600)">Contratado · Assinatura avançada</div>
+              </div>
+            </div>
+            <div style="margin-top:8px;font-size:11px;color:var(--gray-400)">Campos posicionados: <strong style="color:var(--navy)">3</strong></div>
+          </div>
+        </div>
+        <!-- EDITOR MAIN -->
+        <div class="editor-main">
+          <div class="pdf-viewer">
+            <div class="pdf-viewer-header">
+              <div class="pdf-viewer-title">Contrato de Prestação de Serviços.pdf</div>
+              <div class="pdf-viewer-actions">
+                <div class="pdf-page-nav">
+                  <button style="background:rgba(255,255,255,0.1);border:none;color:white;border-radius:4px;padding:3px 8px;cursor:pointer;font-size:12px">‹</button>
+                  <span style="font-size:12px;color:var(--gray-400)">Pág. 1 / 2</span>
+                  <button style="background:rgba(255,255,255,0.1);border:none;color:white;border-radius:4px;padding:3px 8px;cursor:pointer;font-size:12px">›</button>
+                </div>
+                <span style="font-size:11px;color:var(--gray-600)">100%</span>
+              </div>
+            </div>
+            <div class="pdf-body">
+              <div class="pdf-document">
+                <div class="pdf-document-title">CONTRATO DE PRESTAÇÃO DE SERVIÇOS</div>
+                <div class="pdf-document-sub">Ref.: CPS-2026-0147 · Versão 1 · Confidencial</div>
+                <div class="pdf-text-block">
+                  Pelo presente instrumento particular, as partes abaixo qualificadas celebram o presente Contrato de Prestação de Serviços de Marketing Digital, que se regerá pelas cláusulas e condições a seguir estabelecidas:
+                </div>
+                <div class="pdf-text-block">
+                  <strong>CONTRATANTE:</strong> Empresa XYZ Comércio Ltda., inscrita no CNPJ sob o nº 98.765.432/0001-11, com sede na Rua das Acácias, 456, São Paulo – SP.
+                </div>
+                <div class="pdf-text-block">
+                  <strong>CONTRATADO:</strong> <span class="name-field-placeholder">✎ Nome completo</span> <span class="cpf-field-placeholder">🪪 CPF</span>, residente e domiciliado no endereço indicado na proposta comercial.
+                </div>
+                <div class="pdf-text-block" style="margin-top:12px">
+                  <strong>1. OBJETO DO CONTRATO</strong><br>
+                  O CONTRATADO prestará à CONTRATANTE os serviços de gestão de redes sociais, produção de conteúdo e consultoria em tráfego pago, conforme escopo detalhado no Anexo I deste contrato.
+                </div>
+                <div class="pdf-text-block">
+                  <strong>2. PRAZO</strong><br>
+                  O presente contrato vigorará pelo período de 12 (doze) meses, com início em 01/03/2026 e término em 28/02/2027, podendo ser renovado por mútuo acordo das partes.
+                </div>
+                <div class="pdf-text-block">
+                  <strong>3. VALOR E FORMA DE PAGAMENTO</strong><br>
+                  Pela prestação dos serviços, a CONTRATANTE pagará ao CONTRATADO o valor mensal de R$ 3.500,00 (três mil e quinhentos reais), mediante emissão de nota fiscal...
+                </div>
+                <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--gray-200)">
+                  <div style="display:flex;gap:20px;">
+                    <div style="flex:1">
+                      <div class="signature-field-placeholder">
+                        <span class="sig-field-icon">✒</span>
+                        <div>
+                          <div class="sig-field-label">Assinatura · Marcos Costa</div>
+                          <div class="sig-field-sub">Assinatura avançada com OTP</div>
+                        </div>
+                        <span class="sig-field-drag-hint">Arraste</span>
+                      </div>
+                    </div>
+                    <div style="flex:1">
+                      <div class="signature-field-placeholder" style="border-color:#6366F1;background:rgba(99,102,241,0.06)">
+                        <span class="sig-field-icon" style="color:#6366F1">✒</span>
+                        <div>
+                          <div class="sig-field-label" style="color:#6366F1">Assinatura · Empresa XYZ</div>
+                          <div class="sig-field-sub">Representante legal</div>
+                        </div>
+                        <span class="sig-field-drag-hint">Arraste</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;margin-top:10px;padding-top:8px">
+                    <span style="font-size:11px;color:var(--gray-400)">São Paulo, <span style="display:inline-block;border-bottom:1px solid var(--gray-400);width:80px;margin:0 4px;"></span> de 2026.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FIELDS PANEL -->
+          <div class="fields-panel">
+            <div class="fields-panel-header">
+              <div class="fields-panel-title">Campos</div>
+              <div class="fields-panel-sub">Arraste para o PDF</div>
+            </div>
+            <div class="field-group">
+              <div class="field-group-label">Assinatura</div>
+              <div class="field-chip sig">✒ Assinatura</div>
+              <div class="field-chip sig" style="border-color:rgba(201,146,42,0.2);color:var(--gray-600);font-size:11px">🔲 Rubrica</div>
+            </div>
+            <div class="field-group">
+              <div class="field-group-label">Identificação</div>
+              <div class="field-chip name">✎ Nome completo</div>
+              <div class="field-chip cpf">🪪 CPF/CNPJ</div>
+              <div class="field-chip date" style="border-color:rgba(20,184,166,0.4);color:#14B8A6">📅 Data</div>
+            </div>
+            <div class="field-group">
+              <div class="field-group-label">Outros</div>
+              <div class="field-chip check">☑ Checkbox</div>
+              <div class="field-chip" style="border-color:var(--gray-200);font-size:11px;color:var(--gray-600)">🔤 Texto livre</div>
+            </div>
+            <div style="padding:12px;border-top:1px solid var(--gray-100)">
+              <div style="font-size:10px;color:var(--gray-400);line-height:1.5">💡 Dica: clique em um campo posicionado para editar as propriedades do signatário e obrigatoriedade.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== SCREEN 4: MOBILE SIGN ====== -->
+  <div class="screen-block">
+    <div class="screen-label">
+      <div class="screen-number">4</div>
+      <div class="screen-name">Experiência de Assinatura (Mobile)</div>
+    </div>
+    <p class="screen-desc">Tela mobile-first do signatário — OTP, leitura do documento e assinatura com canvas. Sem necessidade de app.</p>
+    <div class="screen-frame" style="background:linear-gradient(135deg, #0A1628 0%, #1A3055 100%);">
+      <div class="mobile-wrapper">
+        <!-- PHONE 1: OTP -->
+        <div>
+          <div class="mobile-frame">
+            <div class="mobile-notch"></div>
+            <div class="mobile-screen">
+              <div class="mobile-sign-header">
+                <div class="mobile-sign-logo">
+                  <div class="mobile-logo-mark">S</div>
+                  <span class="mobile-logo-name">Signr</span>
+                </div>
+                <div class="mobile-sign-company">Agência Creativa Ltda</div>
+                <div class="mobile-sign-docname">Contrato de Prestação</div>
+              </div>
+              <div class="mobile-body">
+                <div class="mobile-info-card">
+                  <div class="mobile-info-row">
+                    <span class="mobile-info-key">Documento</span>
+                    <span class="mobile-info-val">Contrato CPS-0147</span>
+                  </div>
+                  <div class="mobile-info-row">
+                    <span class="mobile-info-key">Enviado por</span>
+                    <span class="mobile-info-val">João Rodrigues</span>
+                  </div>
+                  <div class="mobile-info-row">
+                    <span class="mobile-info-key">Nível</span>
+                    <span class="mobile-info-val"><span class="level-badge">⚡ Avançada</span></span>
+                  </div>
+                  <div class="mobile-info-row">
+                    <span class="mobile-info-key">Expira em</span>
+                    <span class="mobile-info-val" style="color:var(--gold)">5 dias</span>
+                  </div>
+                </div>
+                <div class="mobile-auth-card">
+                  <div class="mobile-auth-title">Verificação de identidade</div>
+                  <div class="mobile-auth-sub">Enviamos um código de 6 dígitos para marcos@email.com. Digite abaixo para confirmar.</div>
+                  <div class="mobile-otp-row">
+                    <div class="otp-box filled">3</div>
+                    <div class="otp-box filled">8</div>
+                    <div class="otp-box filled">4</div>
+                    <div class="otp-box filled">1</div>
+                    <div class="otp-box">_</div>
+                    <div class="otp-box">_</div>
+                  </div>
+                </div>
+                <button class="mobile-cta">Verificar e continuar →</button>
+                <div style="text-align:center;margin-top:10px;font-size:11px;color:var(--gray-400)">Não recebeu? <span style="color:var(--gold);font-weight:600">Reenviar código</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-frame-label">Passo 1 — Verificação OTP</div>
+        </div>
+
+        <!-- PHONE 2: SIGN -->
+        <div>
+          <div class="mobile-frame">
+            <div class="mobile-notch"></div>
+            <div class="mobile-screen">
+              <div class="mobile-sign-header">
+                <div class="mobile-sign-logo">
+                  <div class="mobile-logo-mark">S</div>
+                  <span class="mobile-logo-name">Signr</span>
+                </div>
+                <div class="mobile-sign-company">Assinatura · Campo 2 de 2</div>
+                <div class="mobile-sign-docname">Contrato de Prestação</div>
+              </div>
+              <div class="mobile-body">
+                <div class="mobile-section-title">Sua assinatura</div>
+                <div style="font-size:11.5px;color:var(--gray-600);margin-bottom:12px;line-height:1.5">Desenhe ou use sua assinatura salva. Ela será aplicada no campo indicado.</div>
+                <div class="mobile-sig-area">
+                  <div class="mobile-sig-svg">✍</div>
+                  <div class="mobile-sig-hint">Desenhe aqui</div>
+                  <div style="font-size:10px;color:var(--gray-400)">ou toque em "Usar salva"</div>
+                </div>
+                <div style="display:flex;gap:8px;margin-bottom:14px">
+                  <button style="flex:1;padding:8px;background:var(--gray-100);border:1px solid var(--gray-200);border-radius:8px;font-size:11px;font-weight:600;color:var(--gray-800);cursor:pointer;font-family:'DM Sans',sans-serif">🗑 Limpar</button>
+                  <button style="flex:1;padding:8px;background:var(--gray-100);border:1px solid var(--gray-200);border-radius:8px;font-size:11px;font-weight:600;color:var(--navy);cursor:pointer;font-family:'DM Sans',sans-serif">📌 Usar salva</button>
+                  <button style="flex:1;padding:8px;background:var(--gray-100);border:1px solid var(--gray-200);border-radius:8px;font-size:11px;font-weight:600;color:var(--gray-800);cursor:pointer;font-family:'DM Sans',sans-serif">🔤 Digitar</button>
+                </div>
+                <div style="font-size:10.5px;color:var(--gray-400);background:var(--gray-100);border-radius:8px;padding:10px;margin-bottom:14px;line-height:1.5">
+                  ✅ Ao clicar em <strong style="color:var(--navy)">Assinar documento</strong>, você concorda com os termos e declara ser a pessoa identificada.
+                </div>
+                <button class="mobile-cta">✒ Assinar documento</button>
+                <button class="mobile-secondary-cta">✗ Recusar assinatura</button>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-frame-label">Passo 3 — Assinatura</div>
+        </div>
+
+        <!-- PHONE 3: SUCCESS -->
+        <div>
+          <div class="mobile-frame">
+            <div class="mobile-notch"></div>
+            <div class="mobile-screen">
+              <div class="mobile-sign-header">
+                <div class="mobile-sign-logo">
+                  <div class="mobile-logo-mark">S</div>
+                  <span class="mobile-logo-name">Signr</span>
+                </div>
+                <div class="mobile-sign-company" style="color:var(--gold-light)">Assinatura concluída!</div>
+              </div>
+              <div class="mobile-body" style="text-align:center">
+                <div style="width:72px;height:72px;background:rgba(29,184,122,0.15);border:2px solid var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;margin:16px auto 14px;">✓</div>
+                <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:6px">Documento assinado!</div>
+                <div style="font-size:12px;color:var(--gray-600);line-height:1.5;margin-bottom:18px">Sua assinatura foi registrada com segurança. Você receberá uma cópia por e-mail em instantes.</div>
+                <div class="mobile-info-card" style="text-align:left">
+                  <div class="mobile-info-row">
+                    <span class="mobile-info-key">Assinado em</span>
+                    <span class="mobile-info-val" style="font-size:11px">25/02/2026 14:37:22</span>
+                  </div>
+                  <div class="mobile-info-row">
+                    <span class="mobile-info-key">Dispositivo</span>
+                    <span class="mobile-info-val" style="font-size:11px">iPhone 14 · iOS 17</span>
+                  </div>
+                  <div class="mobile-info-row">
+                    <span class="mobile-info-key">ID da Assinatura</span>
+                    <span class="mobile-info-val" style="font-family:'DM Mono',monospace;font-size:9px;color:var(--gray-400)">SGN-8f3a2bc1</span>
+                  </div>
+                </div>
+                <button class="mobile-cta" style="margin-top:14px">📥 Baixar PDF assinado</button>
+                <div style="text-align:center;margin-top:10px;font-size:11px;color:var(--gray-400)">
+                  <span style="color:var(--gold);font-weight:600;cursor:pointer">Validar documento</span> · signr.com.br/validar
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-frame-label">Passo 4 — Confirmação</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== SCREEN 5: AUDIT TRAIL ====== -->
+  <div class="screen-block">
+    <div class="screen-label">
+      <div class="screen-number">5</div>
+      <div class="screen-name">Trilha de Auditoria</div>
+    </div>
+    <p class="screen-desc">Cadeia completa de evidências — hashes, IPs, dispositivos, eventos e integridade do documento.</p>
+    <div class="screen-frame">
+      <div class="topbar">
+        <div class="topbar-logo">
+          <div class="topbar-logo-mark">S</div>
+          <span class="topbar-logo-name">Signr</span>
+        </div>
+        <div style="font-size:12.5px;color:rgba(255,255,255,0.6)">Auditoria · <span style="color:var(--white)">Contrato CPS-0147</span></div>
+        <div class="topbar-right">
+          <button class="btn-ghost" style="font-size:12px">Exportar JSON</button>
+          <button class="btn-primary" style="font-size:12px">📥 Baixar Certificado</button>
+        </div>
+      </div>
+      <div class="layout-with-sidebar">
+        <div class="sidebar">
+          <div class="sidebar-section-label">Documento</div>
+          <div style="padding:14px 16px">
+            <div style="font-size:12px;font-weight:600;color:var(--white);margin-bottom:3px">Contrato CPS-0147</div>
+            <div style="font-size:11px;color:var(--gray-600);margin-bottom:8px">2 páginas · 148 KB</div>
+            <span class="status-badge badge-signed" style="font-size:11px">Assinado</span>
+          </div>
+          <div class="sidebar-section-label">Signatários</div>
+          <div style="padding:0 12px">
+            <div style="display:flex;align-items:center;gap:8px;padding:9px 8px;border-radius:7px;margin-bottom:4px;background:rgba(29,184,122,0.08)">
+              <div class="signer-avatar sa1" style="width:28px;height:28px;font-size:10px;margin:0;border:none;flex-shrink:0">MC</div>
+              <div>
+                <div style="font-size:11.5px;font-weight:600;color:var(--white)">Marcos Costa</div>
+                <div style="font-size:10px;color:var(--green)">✓ Assinado 25/02 14:37</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;padding:9px 8px;border-radius:7px;margin-bottom:4px;background:rgba(29,184,122,0.08)">
+              <div class="signer-avatar sa4" style="width:28px;height:28px;font-size:10px;margin:0;border:none;flex-shrink:0">JR</div>
+              <div>
+                <div style="font-size:11.5px;font-weight:600;color:var(--white)">João Rodrigues</div>
+                <div style="font-size:10px;color:var(--green)">✓ Assinado 25/02 15:02</div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-section-label">Integridade</div>
+          <div style="padding:0 14px 14px">
+            <div style="background:rgba(29,184,122,0.1);border:1px solid rgba(29,184,122,0.2);border-radius:8px;padding:10px;font-size:11px;color:var(--green);font-weight:600">✓ Documento íntegro</div>
+            <div style="font-size:10px;color:var(--gray-600);margin-top:6px;line-height:1.5">Nenhuma alteração detectada após assinatura. Hash verificado.</div>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="page-header">
+            <div>
+              <div class="page-title">Trilha de Auditoria</div>
+              <div class="page-sub">Cadeia completa de evidências · ID: DOC-2026-CPS-0147-8f3a</div>
+            </div>
+          </div>
+
+          <div class="doc-integrity-banner">
+            <div class="integrity-icon">🔒</div>
+            <div>
+              <div class="integrity-title">Integridade verificada — Documento íntegro</div>
+              <div class="integrity-sub">O hash SHA-256 do documento final confere com o original. Nenhuma modificação foi detectada após a assinatura das partes.</div>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 320px;gap:16px">
+            <div>
+              <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:14px;font-family:'Playfair Display',serif">Linha do tempo de eventos</div>
+              <div class="audit-timeline">
+
+                <div class="audit-event">
+                  <div class="audit-dot"></div>
+                  <div class="audit-event-title">📤 Documento enviado para assinatura</div>
+                  <div class="audit-event-meta">
+                    <span class="audit-meta-item"><span class="audit-meta-label">Data</span> 23/02/2026 09:14:05 BRT</span>
+                    <span class="audit-meta-item"><span class="audit-meta-label">Por</span> João Rodrigues</span>
+                    <span class="audit-meta-item"><span class="audit-meta-label">IP</span> 189.34.XX.XX (São Paulo, SP)</span>
+                  </div>
+                </div>
+
+                <div class="audit-event">
+                  <div class="audit-dot blue"></div>
+                  <div class="audit-event-title">👁 Documento aberto por Marcos Costa</div>
+                  <div class="audit-event-meta">
+                    <span class="audit-meta-item"><span class="audit-meta-label">Data</span> 25/02/2026 14:30:48 BRT</span>
+                    <span class="audit-meta-item"><span class="audit-meta-label">IP</span> 187.23.XX.XX (Campinas, SP)</span>
+                    <span class="audit-meta-item"><span class="audit-meta-label">Dispositivo</span> iPhone 14 · Safari 17 · iOS 17.3</span>
+                  </div>
+                  <div class="audit-hash">User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15</div>
+                </div>
+
+                <div class="audit-event">
+                  <div class="audit-dot blue"></div>
+                  <div class="audit-event-title">🔐 OTP verificado com sucesso — Marcos Costa</div>
+                  <div class="audit-event-meta">
+                    <span class="audit-meta-item"><span class="audit-meta-label">Data</span> 25/02/2026 14:33:12 BRT</span>
+                    <span class="audit-meta-item"><span class="audit-meta-label">Canal</span> E-mail OTP (6 dígitos)</span>
+                    <span class="audit-meta-item"><span class="audit-meta-label">IP</span> 187.23.XX.XX</span>
+                  </div>
+                </div>
+
+                <div class="audit-event">
+                  <div class="audit-dot green"></div>
+                  <div class="audit-event-title">✅ Assinatura registrada — Marcos Costa</div>
+                  <div class="audit-event-meta">
+                    <span class="audit-meta-item"><span class="audit-meta-label">Data</span> 25/02/2026 14:37:22 BRT</span>
+                    <span class="audit-meta-item"><span class="audit-meta-label">Nível</span> Assinatura Avançada</span>
+                    <span class="audit-meta-item"><span class="audit-meta-label">IP</span> 187.23.XX.XX · Campinas, SP</span>
+                  </div>
+                  <div class="audit-hash">Sig Hash: a3f7c82b9e...d4f1 · Doc Hash (pré): 8a2e94bc...1d72</div>
+                </div>
+
+                <div class="audit-event">
+                  <div class="audit-dot green"></div>
+                  <div class="audit-event-title">✅ Assinatura registrada — João Rodrigues</div>
+                  <div class="audit-event-meta">
+                    <span class="audit-meta-item"><span class="audit-meta-label">Data</span> 25/02/2026 15:02:09 BRT</span>
+                    <span class="audit-meta-item"><span class="audit-meta-label">Nível</span> Assinatura Avançada</span>
+                    <span class="audit-meta-item"><span class="audit-meta-label">IP</span> 200.168.XX.XX · São Paulo, SP</span>
+                  </div>
+                </div>
+
+                <div class="audit-event">
+                  <div class="audit-dot green"></div>
+                  <div class="audit-event-title">🎉 Processo concluído — todos assinaram</div>
+                  <div class="audit-event-meta">
+                    <span class="audit-meta-item"><span class="audit-meta-label">Data</span> 25/02/2026 15:02:15 BRT</span>
+                    <span class="audit-meta-item"><span class="audit-meta-label">PDF final</span> gerado e carimbado</span>
+                  </div>
+                  <div class="audit-hash">Hash final SHA-256: e7d3f94a8c2b1e5f...9a4c · Carimbo de tempo: TSA Válido</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div style="font-family:'Playfair Display',serif;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:10px">Hashes do Documento</div>
+              <div style="background:var(--navy);border-radius:12px;padding:16px;margin-bottom:14px">
+                <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--gold-light);margin-bottom:10px">Verificação de Integridade</div>
+                <div style="margin-bottom:10px">
+                  <div style="font-size:9px;color:var(--gray-400);text-transform:uppercase;letter-spacing:.5px;font-weight:700">Hash Original (SHA-256)</div>
+                  <div style="font-family:'DM Mono',monospace;font-size:9.5px;color:rgba(255,255,255,0.6);margin-top:3px;word-break:break-all;line-height:1.6">8a2e94bc3f17a...1d72f5e</div>
+                </div>
+                <div style="margin-bottom:10px">
+                  <div style="font-size:9px;color:var(--gray-400);text-transform:uppercase;letter-spacing:.5px;font-weight:700">Hash Final (SHA-256)</div>
+                  <div style="font-family:'DM Mono',monospace;font-size:9.5px;color:rgba(255,255,255,0.6);margin-top:3px;word-break:break-all;line-height:1.6">e7d3f94a8c2b1e...9a4cf1b</div>
+                </div>
+                <div style="background:rgba(29,184,122,0.12);border:1px solid rgba(29,184,122,0.3);border-radius:7px;padding:8px 10px;font-size:11px;color:var(--green);font-weight:600;display:flex;align-items:center;gap:6px">
+                  ✓ Hashes verificados com sucesso
+                </div>
+              </div>
+              <div style="background:var(--white);border-radius:12px;padding:14px;border:1px solid var(--gray-200);box-shadow:var(--shadow-sm)">
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--gray-400);margin-bottom:10px">Evidências Coletadas</div>
+                <div style="font-size:12px;color:var(--gray-800);line-height:1.7">
+                  ✅ E-mail verificado (OTP)<br>
+                  ✅ IP e geolocalização registrados<br>
+                  ✅ Dispositivo e user-agent<br>
+                  ✅ Aceite aos termos registrado<br>
+                  ✅ Hash do documento pré/pós<br>
+                  ✅ Carimbo de tempo (TSA)<br>
+                  ✅ Trilha imutável em log seguro
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== SCREEN 6: CERTIFICATE ====== -->
+  <div class="screen-block">
+    <div class="screen-label">
+      <div class="screen-number">6</div>
+      <div class="screen-name">Certificado de Conclusão</div>
+    </div>
+    <p class="screen-desc">PDF gerado automaticamente ao final do processo — resumo técnico e jurídico da assinatura, com QR para validação.</p>
+    <div class="screen-frame">
+      <div class="topbar">
+        <div class="topbar-logo">
+          <div class="topbar-logo-mark">S</div>
+          <span class="topbar-logo-name">Signr</span>
+        </div>
+        <div style="font-size:12.5px;color:rgba(255,255,255,0.6)">Certificado · <span style="color:var(--white)">Contrato CPS-0147</span></div>
+        <div class="topbar-right">
+          <button class="btn-primary">📥 Baixar PDF</button>
+        </div>
+      </div>
+      <div class="cert-wrapper">
+        <div class="certificate">
+          <div class="cert-header">
+            <div class="cert-logo">
+              <div class="cert-logo-mark">S</div>
+              <span class="cert-logo-name">Signr</span>
+            </div>
+            <div class="cert-badge">
+              <div class="cert-badge-label">✓ Assinado</div>
+              <div class="cert-badge-value">ID: SGN-8f3a2bc1</div>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-title">Certificado de Conclusão</div>
+            <div class="cert-subtitle">Documento eletronicamente assinado por todas as partes</div>
+            <div class="cert-status-row">
+              <div class="cert-status-icon">✅</div>
+              <div>
+                <div class="cert-status-text">Processo concluído com sucesso</div>
+                <div class="cert-status-sub">Todas as partes assinaram. Documento com validade jurídica nos termos da Lei 14.063/2020 e MP 2.200-2/2001.</div>
+              </div>
+            </div>
+
+            <div class="cert-section-title">Dados do Documento</div>
+            <div class="cert-doc-row">
+              <span class="cert-doc-key">Nome</span>
+              <span class="cert-doc-val">Contrato de Prestação de Serviços</span>
+            </div>
+            <div class="cert-doc-row">
+              <span class="cert-doc-key">Referência</span>
+              <span class="cert-doc-val">CPS-2026-0147</span>
+            </div>
+            <div class="cert-doc-row">
+              <span class="cert-doc-key">Tipo de Assinatura</span>
+              <span class="cert-doc-val"><span class="inline-tag tag-blue">Avançada</span></span>
+            </div>
+            <div class="cert-doc-row">
+              <span class="cert-doc-key">Enviado em</span>
+              <span class="cert-doc-val">23/02/2026 09:14 BRT</span>
+            </div>
+            <div class="cert-doc-row">
+              <span class="cert-doc-key">Concluído em</span>
+              <span class="cert-doc-val">25/02/2026 15:02 BRT</span>
+            </div>
+
+            <div class="cert-section-title">Signatários</div>
+            <div class="cert-signers-grid">
+              <div class="cert-signer-card">
+                <div class="cert-signer-name">Marcos Costa</div>
+                <div class="cert-signer-role">Contratado</div>
+                <div class="cert-signer-status">✅ Assinado</div>
+                <div class="cert-signer-time">25/02/2026 14:37 · IP: 187.23.XX.XX</div>
+                <div class="cert-signer-time">Método: E-mail OTP · iPhone 14</div>
+              </div>
+              <div class="cert-signer-card">
+                <div class="cert-signer-name">João Rodrigues</div>
+                <div class="cert-signer-role">Contratante</div>
+                <div class="cert-signer-status">✅ Assinado</div>
+                <div class="cert-signer-time">25/02/2026 15:02 · IP: 200.168.XX.XX</div>
+                <div class="cert-signer-time">Método: E-mail OTP · Chrome · Win</div>
+              </div>
+            </div>
+
+            <div class="cert-hash-block">
+              <div class="cert-hash-title">⬡ Integridade Criptográfica</div>
+              <div class="cert-hash-row">
+                <div class="cert-hash-key">Hash Original (SHA-256)</div>
+                <div class="cert-hash-val">8a2e94bc3f17ad2c5b89e14f3ca72b1f4e8d6a09e2b5f7d3c1a8e4f2b7d9e0c3</div>
+              </div>
+              <div class="cert-hash-row">
+                <div class="cert-hash-key">Hash Final (SHA-256)</div>
+                <div class="cert-hash-val">e7d3f94a8c2b1e5f9d7a3c8b2e4f1d6c9a7e3b5f8d2c1a4e7b9d3f5c2a8e1d4</div>
+              </div>
+              <div class="cert-hash-row">
+                <div class="cert-hash-key">Carimbo de Tempo (TSA)</div>
+                <div class="cert-hash-val">2026-02-25T15:02:15.000Z · ICP-Brasil TSA · Serial: 4A8F2C1E</div>
+              </div>
+            </div>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-validate-link">🔍 signr.com.br/validar/SGN-8f3a2bc1</span>
+            <span class="cert-timestamp">Emitido em 2026-02-25T15:02:20Z</span>
+          </div>
+        </div>
+        <div class="cert-side-panel">
+          <div class="cert-qr">
+            <div class="qr-code">
+              <div class="qr-grid">
+                <div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell white"></div>
+                <div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div>
+                <div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div>
+                <div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div>
+                <div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell"></div>
+                <div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div>
+                <div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div>
+                <div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell white"></div>
+                <div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div>
+                <div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell white"></div><div class="qr-cell"></div><div class="qr-cell"></div>
+              </div>
+            </div>
+            <div class="cert-qr-label">Validar documento</div>
+            <div class="cert-qr-sub">Escaneie para verificar a autenticidade em tempo real.</div>
+          </div>
+          <div class="cert-action-btns">
+            <button class="cert-action-btn gold">📥 Baixar PDF</button>
+            <button class="cert-action-btn primary">🔍 Verificar online</button>
+            <button class="cert-action-btn outline">📤 Compartilhar</button>
+            <button class="cert-action-btn outline">📋 Copiar link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="text-align:center;padding:40px 20px 60px;border-top:1px solid rgba(255,255,255,0.06)">
+  <div class="brand-logo" style="justify-content:center;margin-bottom:10px">
+    <div class="logo-mark">S</div>
+    <div class="logo-name">Sign<span>r</span></div>
+  </div>
+  <div style="font-size:13px;color:var(--gray-600);max-width:520px;margin:0 auto;line-height:1.7">
+    Mockup visual conceitual — 6 telas representando os principais fluxos do produto.<br>
+    Identidade: <strong style="color:var(--white)">Azul-marinho profundo + Dourado âmbar + Branco</strong> · Tipografia: <strong style="color:var(--white)">Playfair Display + DM Sans</strong>
+  </div>
+</div>
+
+</body>
+</html>
